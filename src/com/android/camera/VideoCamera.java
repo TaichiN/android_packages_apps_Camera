@@ -1112,6 +1112,7 @@ public class VideoCamera extends BaseCamera
         // See android.hardware.Camera.Parameters.setRotation for
         // documentation.
         int rotation = 0;
+        /*
         if (mOrientation != OrientationEventListener.ORIENTATION_UNKNOWN) {
             CameraInfo info = CameraHolder.instance().getCameraInfo()[mCameraId];
             if (info.facing == CameraInfo.CAMERA_FACING_FRONT) {
@@ -1120,6 +1121,7 @@ public class VideoCamera extends BaseCamera
                 rotation = (info.orientation + mOrientation) % 360;
             }
         }
+        */
         mMediaRecorder.setOrientationHint(rotation);
         mOrientationHint = rotation;
 

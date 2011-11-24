@@ -859,6 +859,7 @@ public class VideoCamera extends BaseCamera
                 }
                 break;
             case KeyEvent.KEYCODE_FOCUS:
+            case KeyEvent.KEYCODE_SEARCH:
                 if (event.getRepeatCount() == 0) {
                     if (mMediaRecorder != null) {
                         mMediaRecorder.autoFocusCamera();
